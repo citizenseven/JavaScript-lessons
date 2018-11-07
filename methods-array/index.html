@@ -20,6 +20,7 @@
 
 // document.write(arr2.join("_")); склеивает свойства массива
 // document.write(arr2.reverse());
+
 // document.write(arr2.sort());
 // document.write(arr2.sort(function(a,b){
 //     // return -1;
@@ -40,7 +41,30 @@
 // arr2.splice(2,2,"hello(3)","friend(4)");//добавляем на место удаленных элементов
 // arr2.splice(5,0,"Hello","friend");//добавляет новые элементы с индекса 5
 // arr2.splice(-5,0,"Hello","friend");//отсчитывается с конца массива,
- document.write(arr2);//удаляет c позиции 2, удалить 1 элемент
+
+
+// arr2.push("end");//добавляет в конец массива
+// arr2.pop();//удаляет последний элемент массива
+// arr2.unshift("end");//добавляет в начала массива
+// arr2.shift();//удаляет первый элемент массива
+
+
+// arr2.forEach(function(v,i,a){
+//     a[i] = v + 10 + 'hello';
+// })
+
+//возвращает новый массив
+// var res = arr2.map(function(x,i,a){
+//     return x*x;
+// });
+
+//создает новый масив и входят только те элементы которые true
+// var res2 = arr2.filter(function(x,i,a){
+//     return x == 5;
+// });
+
+
+document.write(res2);
 
     </script>
 </body>
