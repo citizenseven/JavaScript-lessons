@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Methods with array</title>
+</head>
+<body>
+    
+    <script>
+    var arr2 = [1,2,3,4,5,10];
+    var arr_res = ["friend",6,78,9];
+//have is a number in arr2
+    // if( 3 in arr2){
+    //     alert(true);
+    // }else{
+    //     alert(false)
+    // }
+
+// document.write(arr2.join("_")); склеивает свойства массива
+// document.write(arr2.reverse());
+// document.write(arr2.sort());
+// document.write(arr2.sort(function(a,b){
+//     // return -1;
+//     // return a-b;
+//     return b-a;
+// }));
+
+//слияние двух массивов
+// var arr_all = arr2.concat(arr_res);
+// document.write(arr_all);
+
+//возвращает фрагмент массива, Не включая последний
+// document.write(arr2.slice(0,3));//1,2,3 (4) имеет индекс - 3, не выводит
+//document.write(arr2.slice(-3));//выводит фрагмент массива с индекса 3 включительно: 4,5,10
+
+//document.write(arr2.splice(2,3));//показывает какие элементы были удаленны
+// arr2.splice(2,2,);//удаляет с позиции 2, 2 элемента 3 и 4
+// arr2.splice(2,2,"hello(3)","friend(4)");//добавляем на место удаленных элементов
+// arr2.splice(5,0,"Hello","friend");//добавляет новые элементы с индекса 5
+// arr2.splice(-5,0,"Hello","friend");//отсчитывается с конца массива,
+ document.write(arr2);//удаляет c позиции 2, удалить 1 элемент
+
+    </script>
+</body>
+</html>
