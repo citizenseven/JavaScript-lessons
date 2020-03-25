@@ -1,3 +1,39 @@
+function calc(a,b){
+    return (a + b);
+}
+//let calc = (a,b) => a+b; //es6
+console.log(calc); // выведет код функции
+console.log(calc(4,9)); // выведет результат 
+
+//функциональное выражение
+let retVar = function(){
+    let num = 50;
+    return num;
+}
+let anotherNum = retVar();
+console.log(anotherNum);
+
+// let str = "test";
+// console.log(str.length);
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+
+// let twelve = "12.2px";
+// // console.log(Math.round(twelve)); //округляет до целого
+// console.log(parseFloat(twelve));
+// console.log(parseInt(twelve));
+// console.log(String(twelve));
+// console.log(Number(twelve));
+
+
+
+
+// let num = 20;
+// function showMess(txt){
+//     console.log(txt);
+//     console.log(num);
+// }
+// showMess("txt");
 
 
 //Замыкание
