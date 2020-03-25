@@ -1,3 +1,5 @@
+'user strict';
+
 let money,time;
 function start(){
     money = +prompt("Ваш бюджет на месяц?", "");
@@ -28,7 +30,7 @@ function chooseExpenses(){
             appData.expenses[a] = b;
         }else{
             console.log("error");
-            i = i - 1;
+            i--;
         }
     }
 }
@@ -37,8 +39,8 @@ chooseExpenses();
 function chooseOptExpenses(){
     for(let i = 0; i < 3; i++){
         let c = prompt("Необязательные расходы?","");
-
         appData.optionalExpenses[i] = c;
+        console.log(appData.optionalExpenses);
     }
 }
 chooseOptExpenses();
