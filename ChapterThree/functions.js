@@ -27,7 +27,6 @@ console.log(anotherNum);
 
 
 
-
 // let num = 20;
 // function showMess(txt){
 //     console.log(txt);
