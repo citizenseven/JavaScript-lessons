@@ -21,7 +21,7 @@ let appData = {
 function chooseExpenses(){
     for(let i = 0; i < 2; i++){
         let a = prompt("Что хотите купить в этом месяце?", "Машину"),
-            b = prompt("Во сколько обойдется?", "180 000");
+            b = +prompt("Во сколько обойдется?", "180 000");
 
         if( (typeof(a)) === "string" && (typeof(a)) != null && (typeof(b)) != null && a != "" && b != "" && a.length < 50){
             console.log("Ok!");
@@ -34,19 +34,33 @@ function chooseExpenses(){
 }
 chooseExpenses();
 
-appData.moneyPerDay = (appData.budget / 30).toFixed();
+function chooseOptExpenses(){
+    for(let i = 0; i < 3; i++){
+        let c = prompt("Необязательные расходы?","");
 
-alert("Бюджет: " + appData.moneyPerDay);
-
-if(appData.moneyPerDay < 100){
-    console.log("Minimal lavel");
-}else if(appData.moneyPerDay > 100 && appData.moneyPerDay < 2000){
-    console.log("Средний уровень");
-}else if(appData.moneyPerDay > 2000){
-    console.log("Hight lavel");
-}else{
-    console.log("error");
+        appData.optionalExpenses[i] = c;
+    }
 }
+chooseOptExpenses();
+
+function detectDayBudget(){
+    appData.moneyPerDay = (appData.budget / 30).toFixed();
+    alert("Дневной бюджет: " + appData.moneyPerDay);
+}
+detectDayBudget();
+
+function detectLevel(){
+    if(appData.moneyPerDay < 100){
+        console.log("Очень низкий доход");
+    }else if(appData.moneyPerDay > 100 && appData.moneyPerDay < 2000){
+        console.log("Средний уровень");
+    }else if(appData.moneyPerDay > 2000){
+        console.log("Высокий доход");
+    }else{
+        console.log("error");
+    }
+}
+detectLevel();
 
 function checkSavings(){
     if(appData.saving == true){
