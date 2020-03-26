@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Methods with array</title>
-</head>
-<body>
-    
-    <script>
+
     var arr2 = [1,2,3,4,5,10];
     var arr_res = ["friend",6,78,9];
 //have is a number in arr2
@@ -64,8 +54,4 @@
 // });
 
 
-document.write(res2);
-
-    </script>
-</body>
-</html>
+console.log(res2);
