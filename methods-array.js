@@ -1,12 +1,11 @@
-
-    var arr2 = [1,2,3,4,5,10];
-    var arr_res = ["friend",6,78,9];
+var arr2 = [1,2,3,4,5,10];
+// var arr_res = ["friend",6,78,9];
 //have is a number in arr2
-    // if( 3 in arr2){
-    //     alert(true);
-    // }else{
-    //     alert(false)
-    // }
+    if( 3 in arr2){
+        console.log(true);
+    }else{
+        console.log(false);
+    }
 
 // document.write(arr2.join("_")); склеивает свойства массива
 // document.write(arr2.reverse());
@@ -52,6 +51,3 @@
 // var res2 = arr2.filter(function(x,i,a){
 //     return x == 5;
 // });
-
-
-console.log(res2);
