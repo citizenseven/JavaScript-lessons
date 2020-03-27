@@ -13,7 +13,6 @@
 // console.log(john.armor);
 
 
-
 let car = {
     wheels: 4,
     wheelsSize: 15,

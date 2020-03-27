@@ -1,11 +1,11 @@
-let arr2 = [1,2,3,4,5,10];
+let arr2 = [1,2,3,4,5,10, "pups"];
 // var arr_res = ["friend",6,78,9];
 //have is 3 in arr2
-    if( 3 in arr2){
-        console.log(true);
-    }else{
-        console.log(false);
-    }
+    // if( 3 in arr2){
+    //     console.log(true);
+    // }else{
+    //     console.log(false);
+    // }
 
 // console.log(arr2.join("_")); склеивает свойства массива
 // console.log(arr2.reverse());
@@ -38,19 +38,41 @@ let arr2 = [1,2,3,4,5,10];
 // arr2.shift();//удаляет первый элемент массива
 
 
-arr2.forEach(function(item,key){
-    console.log("Индекс " + key + ": " + item);
-});
+// arr2.forEach(function(item,key){
+//     console.log("Индекс " + key + ": " + item);
+// });
 
 // возвращает новый массив
 // переберает массив arr2 умножает значения на себя же
 // получений ответ записывает в виде нового массива newArr
-let newArr = arr2.map(function(x){
-    return x*x;
-});
-console.log(newArr);
+// let newArr = arr2.map(function(x){
+//     return x*x;
+// });
+// console.log(newArr);
 
 //создает новый масcив и входят только те элементы которые true
 // var res2 = arr2.filter(function(x,i,a){
 //     return x == 5;
 // });
+
+//получаем идексы массива
+// for(let key in arr2){
+//     console.log(key);
+// }
+
+//получить значаение массива
+// for(let key of arr2){
+//     console.log(key);
+// }
+
+
+// let ans = prompt("", ""),
+//     arrAns = [];
+
+// arrAns = ans.split(",");
+// console.log(arrAns);
+
+let arrJ = ["das","asda","wfxc"],
+    i = arrJ.join(""); //join склеивает все в одну строку
+console.log(arrJ);
+console.log(i);
