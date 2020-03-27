@@ -1,17 +1,17 @@
-var arr2 = [1,2,3,4,5,10];
+let arr2 = [1,2,3,4,5,10];
 // var arr_res = ["friend",6,78,9];
-//have is a number in arr2
+//have is 3 in arr2
     if( 3 in arr2){
         console.log(true);
     }else{
         console.log(false);
     }
 
-// document.write(arr2.join("_")); склеивает свойства массива
-// document.write(arr2.reverse());
+// console.log(arr2.join("_")); склеивает свойства массива
+// console.log(arr2.reverse());
 
-// document.write(arr2.sort());
-// document.write(arr2.sort(function(a,b){
+// console.log(arr2.sort());
+// console.log(arr2.sort(function(a,b){
 //     // return -1;
 //     // return a-b;
 //     return b-a;
@@ -19,13 +19,13 @@ var arr2 = [1,2,3,4,5,10];
 
 //слияние двух массивов
 // var arr_all = arr2.concat(arr_res);
-// document.write(arr_all);
+// console.log(arr_all);
 
 //возвращает фрагмент массива, Не включая последний
-// document.write(arr2.slice(0,3));//1,2,3 (4) имеет индекс - 3, не выводит
-//document.write(arr2.slice(-3));//выводит фрагмент массива с индекса 3 включительно: 4,5,10
+// console.log(arr2.slice(0,3));//1,2,3 (4) имеет индекс - 3, не выводит
+//console.log(arr2.slice(-3));//выводит фрагмент массива с индекса 3 включительно: 4,5,10
 
-//document.write(arr2.splice(2,3));//показывает какие элементы были удаленны
+//console.log(arr2.splice(2,3));//показывает какие элементы были удаленны
 // arr2.splice(2,2,);//удаляет с позиции 2, 2 элемента 3 и 4
 // arr2.splice(2,2,"hello(3)","friend(4)");//добавляем на место удаленных элементов
 // arr2.splice(5,0,"Hello","friend");//добавляет новые элементы с индекса 5
@@ -38,14 +38,17 @@ var arr2 = [1,2,3,4,5,10];
 // arr2.shift();//удаляет первый элемент массива
 
 
-// arr2.forEach(function(v,i,a){
-//     a[i] = v + 10 + 'hello';
-// })
+arr2.forEach(function(item,key){
+    console.log("Индекс " + key + ": " + item);
+});
 
-//возвращает новый массив
-// var res = arr2.map(function(x,i,a){
-//     return x*x;
-// });
+// возвращает новый массив
+// переберает массив arr2 умножает значения на себя же
+// получений ответ записывает в виде нового массива newArr
+let newArr = arr2.map(function(x){
+    return x*x;
+});
+console.log(newArr);
 
 //создает новый масcив и входят только те элементы которые true
 // var res2 = arr2.filter(function(x,i,a){
