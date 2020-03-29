@@ -1,24 +1,40 @@
-let options = {
-    width: 1024,
-    height: 1024,
-    name: "screen"
-};
+'user strict';
+
+// let options = {
+//     width: 1024,
+//     height: 1024,
+//     name: "screen"
+// };
 
 // console.log(options.name);
 // options.bool = false;
 // console.log(options);
-options.colors = {
-    border: "black",
-    bg: "red"
-};
+// options.colors = {
+//     border: "black",
+//     bg: "red"
+// };
 // console.log(options);
 // console.log(options.colors.border);
 
 // delete options.bool;
 // console.log(options);
 
-
-for(let key in options){
-    console.log(key + " " + options[key]);
+let cases = [
+    {
+        title: "case one",
+        price: 300
+    },
+    {
+        title: "case Two",
+        price: 500
+    }
+];
+for(let key in cases){
+    console.log(key + " " + cases[key].price + " " + cases[key].title);
 }
-console.log(Object.keys(options.colors).length);
+// console.log(cases[1]["title"]);
+
+// for(let key in options){
+//     console.log(key + " " + options[key]);
+// }
+// console.log(Object.keys(options.colors).length);
