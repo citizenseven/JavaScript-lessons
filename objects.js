@@ -29,9 +29,13 @@ let cases = [
         price: 500
     }
 ];
-for(let key in cases){
-    console.log(key + " " + cases[key].price + " " + cases[key].title);
+
+for(let i = 0; i < cases.length; i++){
+    console.log(i + " " + cases[i].price + " " + cases[i].title);
 }
+// for(let key in cases){
+//     console.log(key + " " + cases[key].price + " " + cases[key].title);
+// }
 // console.log(cases[1]["title"]);
 
 // for(let key in options){
