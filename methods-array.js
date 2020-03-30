@@ -1,4 +1,4 @@
-let arr2 = [1,2,3,4,5,10, "pups"];
+// let arr2 = [1,2,3,4,5,10, "pups"];
 // var arr_res = ["friend",6,78,9];
 //have is 3 in arr2
     // if( 3 in arr2){
@@ -72,7 +72,14 @@ let arr2 = [1,2,3,4,5,10, "pups"];
 // arrAns = ans.split(",");
 // console.log(arrAns);
 
-let arrJ = ["das","asda","wfxc"],
-    i = arrJ.join(""); //join склеивает все в одну строку
-console.log(arrJ);
-console.log(i);
+// let arrJ = ["das","asda","wfxc"],
+//     i = arrJ.join(""); //join склеивает все в одну строку
+// console.log(arrJ);
+// console.log(i);
+
+let num = [1,2,19,4,3],
+    i = num.sort(compareNum);
+function compareNum(a,b){
+    return a - b;
+}
+console.log(num);

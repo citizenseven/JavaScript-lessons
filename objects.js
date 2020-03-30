@@ -22,22 +22,44 @@
 let cases = [
     {
         title: "case one",
-        price: 300
+        price: 300,
+        oldPrice: 500
     },
     {
-        title: "case Two",
-        price: 500
+        title: "case two",
+        price: "",
+        oldPrice: 100
+    },
+    {
+        title: "case three",
+        price: 17839,
+        oldPrice: 99
     }
 ];
+// let op = cases[0].newPrice();
+// console.log(op);
 
-for(let i = 0; i < cases.length; i++){
-    console.log(i + " " + cases[i].price + " " + cases[i].title);
-}
-// for(let key in cases){
-//     console.log(key + " " + cases[key].price + " " + cases[key].title);
+// for(let i = 0; i < cases.length; i++){
+//     console.log(i);
+//     console.log(cases[i]);
+//     console.log(cases[i].price);
 // }
-// console.log(cases[1]["title"]);
 
+for(let key in cases){
+    // console.log(key + " " + cases[key].price + " " + cases[key].oldPrice);
+
+    let newPrice = price => {
+        if(cases[key].price === ""){
+            return cases[key].oldPrice;
+        }else{
+            return cases[key].price;
+        }
+    }
+
+    console.log(cases[key].title + " " + newPrice());
+}
+
+// console.log(cases[1]["title"]);
 // for(let key in options){
 //     console.log(key + " " + options[key]);
 // }
